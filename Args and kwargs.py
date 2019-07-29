@@ -45,3 +45,96 @@ a=["Akansha","Aastha","Ankita","Vivek"]
 normal="Students"
 kw={"Akansha":"4 ","Aastha":"7","Vivek": "57 "}
 func(normal,*a,**kw)
+
+# def func(*args):
+#     for i in args:
+#         print(i)
+# func("abc","def","ghi","jkl")
+
+# def func(l):
+#     for i in l:
+#         print(i)
+# list=["abc","def","ghi","jkl"]
+# func(list)
+# for i in range(1,3):
+#     x=input("Enter a string")
+#     list.append(x)
+# func(list)
+
+# def func(normal,*args):
+#     print("First argument",normal)
+#     for i in args:
+#         print("next:",i)
+# func("ab","cv","ad")
+
+# def func(**kwargs):
+#     for key,value in kwargs.items():
+#         #print(f"{key}=={value}")
+#         print("%s==%s"%(key,value))
+# func(ab="ba",cd="dc",ef="fe")
+#output:
+# ab==ba
+# cd==dc
+# ef==fe
+
+"""def func(arg1,arg2,arg3):
+    print("1:",arg1)
+    print("2:",arg2)
+    print("3:",arg3)
+n=("ab","ac","ad")
+func(*n)"""
+"""def func(*args):
+   for i in args:
+       print(i)
+n=("ab","ac","ad")
+func(*n)"""
+
+# def func(*args):
+#    for i in args:
+#        print(i)
+# func("ab","ac","ad")
+
+# def func(a,b,c):
+#    print(a)
+#    print(b)
+#    print(c)
+# func("ab","ac","ad")
+
+# def func(a,b,c):
+#    print(a)
+#    print(b)
+#    print(c)
+# n=("ab","ac","ad")
+# func(n)
+#TypeError: func() missing 2 required positional arguments: 'b' and 'c'
+
+# def func(a,b,c):
+#    print(a)
+#    print(b)
+#    print(c)
+# n=("ab","ac","ad")
+# func(*n)
+
+def func(a,b,c):
+   print(a)
+   print(b)
+   print(c)
+n=("ab","ac","ad")
+kw={"a" : "Geeks", "b" : "for", "c" : "Geeks"}
+func(*n)
+func(**kw)
+# ab
+# ac
+# ad
+# Geeks
+# for
+# Geeks
+
+func(*n)
+func(*kw)
+# ab
+# ac
+# ad
+# a
+# b
+# c
